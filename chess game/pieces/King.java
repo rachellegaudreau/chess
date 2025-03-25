@@ -19,4 +19,7 @@ public class King extends Piece {
 
 
     }
+    public boolean isValidMovement(int collumn, int row){
+        return Math.abs(collumn - this.collumn) * Math.abs(row - this.row) == 2;
+    }
 }
